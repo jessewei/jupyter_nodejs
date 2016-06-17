@@ -1,6 +1,6 @@
-# anaconda_jupyter
+# jupyter with multiple engine support 
 
-This repository is jupyter server for my personal use.
+This repository is jupyter for data science
 
 This one contain feature is many programing language kernel , IPython3 (python2.7.9), IJulia, IRkernel, IGo, IScala, Bash, Redis kernel, IJavascript.
 Distribution of python is anaconda-2.1.0, this distribution is the latest version of using python2.
