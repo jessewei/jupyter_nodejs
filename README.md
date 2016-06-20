@@ -13,12 +13,30 @@ Distribution of python is anaconda-2.1.0, this distribution is the latest versio
     brew install docker boot2docker
     boot2docker init
     boot2docker up
-    # export boot2docker path
+# export boot2docker path
     docker build "your docker image name" .
 
-### Run by :
+### Run by name
 
+1. Run by name
+    ``` 
+    docker run --name nb -d -v /c/Users/yourName/workspace:/notebooks/workspace -p 8889:8888  jessewei/jupyter_nodejs
+    ```
+    
+2. Start/Stop/Remove container    
+    ``` 
+    docker start nb
+    docker stop nb
+    docker rm nb    
+    ```
+    
+### Run   
+    
+    
+    ```
     docker run -d -p $JUPYTER_PORT:8888 "your docker image name"
+    ```
+    
     # if you want to mount work-directory on host machine, add below option
     # -v <work-directory on host machine>:<mount point on docker image>
 
