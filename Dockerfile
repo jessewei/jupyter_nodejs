@@ -13,5 +13,6 @@ RUN npm install json-query -g && npm cache clean
 # 
 RUN mkdir -p /notebooks/nb_demo && \
     mkdir -p /notebooks/nb_demo/watson && \
-    mkdir -p /notebooks/nb_demo/panda 
+    mkdir -p /notebooks/nb_demo/resources 
 COPY files/watson/* /notebooks/nb_demo/watson/
+COPY files/resources/* /notebooks/nb_demo/resources/

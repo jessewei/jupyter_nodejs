@@ -20,15 +20,15 @@ The demo notebook include [IBM Watson service](https://console.ng.bluemix.net/) 
 
 1. Run by name
 ``` 
-docker run --name nb -d -v /c/Users/yourName/workspace:/notebooks/workspace -p 8889:8888  jessewei/jupyter_nodejs
+$ docker run --name nb -d -v /c/Users/yourName/workspace:/notebooks/workspace -p 8889:8888  jessewei/jupyter_nodejs
     # -v <work-directory on host machine>:<mount point on docker image>
 ```
     
 2. Start/Stop/Remove container    
 ``` 
-docker start nb
-docker stop nb
-docker rm nb    
+$ docker start nb
+$ docker stop nb
+$ docker rm nb    
 ```
 
 
@@ -40,7 +40,7 @@ http://192.168.99.100:8889/
 - The 192.168.99.100 is default docker machine ip, you may like to verify by
 
 ```
-docker-machine config
+$ docker-machine ip
 ``` 
 
 
