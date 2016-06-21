@@ -5,9 +5,11 @@
 This repository is jupyter for data science
 
 This one contain feature is many programing language kernel , IPython3 (python2.7.9), IJulia, IRkernel, IGo, IScala, Bash, Redis kernel, IJavascript.
-Distribution of python is anaconda-2.1.0, this distribution is the latest version of using python2.
+Distribution of python is anaconda-2.1.0, this distribution is the latest version of using python2. 
 
-The demo notebook include [IBM Watson service](https://console.ng.bluemix.net/) laboratory.
+The demo notebook include [IBM Watson service](https://console.ng.bluemix.net/) laboratory. Included utilites are, 
+- Node.js: json-query
+- Python: wordcloud
 
 ## Description
 ### Docker Installation :
@@ -19,16 +21,25 @@ The demo notebook include [IBM Watson service](https://console.ng.bluemix.net/) 
 ### Run by name
 
 1. Run by name
+Attach volumne for saving notebook in host OS.
 ``` 
 $ docker run --name nb -d -v /c/Users/yourName/workspace:/notebooks/workspace -p 8889:8888  jessewei/jupyter_nodejs
-    # -v <work-directory on host machine>:<mount point on docker image>
 ```
-    
+``` 
+    --name <container name>
+    -v <work-directory on host machine>:<mount point on docker image>
+```     
+
 2. Start/Stop/Remove container    
 ``` 
 $ docker start nb
 $ docker stop nb
 $ docker rm nb    
+```
+
+3. Access container 
+``` 
+$ docker exec -it nb bash
 ```
 
 
@@ -43,5 +54,14 @@ http://192.168.99.100:8889/
 $ docker-machine ip
 ``` 
 
+## Sample notebooks
+### Notebook location
+``` 
+http://192.168.99.100:8889/tree/nb_demo/watson
+``` 
+### Notebook list
+Naming is followed the api, and add kernel used in the notebook.
+- **alchemy_language-py.ipynb**, alchemy_language API in python sample
+- **alchemy_vision-py.ipynb**, alchemy_vision API in python sample
 
 

@@ -3,9 +3,8 @@ FROM kota999/anaconda_jupyter:latest
 #
 # Install watson and tools
 # 
-RUN cd /notebooks &&  npm install watson-developer-cloud --save && npm cache clean
-RUN pip install --upgrade watson-developer-cloud 
-RUN npm install json-query -g && npm cache clean
+RUN pip install --upgrade pip && pip install --no-cache-dir --upgrade watson-developer-cloud  wordcloud
+RUN cd /notebooks &&  npm install watson-developer-cloud --save && npm install json-query -g && npm cache clean
 
 
 #
