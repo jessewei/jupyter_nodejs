@@ -2,12 +2,13 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/jessewei/jupyter_nodejs.svg?style=flat-square)](https://hub.docker.com/r/jessewei/jupyter_nodejs/)
 
 # Jupyter with multiple engine support 
-This repository is jupyter for data science
+This repository is a Jupyter service for data science.
 
-This one contain feature is many programing language kernel , IPython3 (python2.7.9), IJulia, IRkernel, IGo, IScala, Bash, Redis kernel, IJavascript.
+Its feature is many programing language kernel, IPython3 (python2.7.9), IJulia, IRkernel, IGo, IScala, Bash, Redis kernel, IJavascript.
 Distribution of python is anaconda-2.1.0, this distribution is the latest version of using python2. 
 
-The demo notebook include [IBM Watson service](https://console.ng.bluemix.net/) laboratory. Included utilites are, 
+Those utilites included for [IBM Watson service](https://console.ng.bluemix.net/) laboratory are listed as below:
+- Watson SDK for nodejs and python
 - Node.js: json-query
 - Python: wordcloud
 
@@ -18,7 +19,7 @@ The demo notebook include [IBM Watson service](https://console.ng.bluemix.net/) 
 - [MacOS](https://docs.docker.com/mac/step_one/)
 - [Linux](https://docs.docker.com/linux/step_one/)
 
-### Run by name
+### Run
 
 1. Run by name
 Attach volumne for saving notebook in host OS.
