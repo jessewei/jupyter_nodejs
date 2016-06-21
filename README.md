@@ -4,16 +4,17 @@
 # Jupyter with multiple engine support 
 This repository is a Jupyter service for data science.
 
-Its feature is many programing language kernel, IPython3 (python2.7.9), IJulia, IRkernel, IGo, IScala, Bash, Redis kernel, IJavascript.
+It covered many programing language kernel, IPython3 (python2.7.9), IJulia, IRkernel, IGo, IScala, Bash, Redis kernel, IJavascript.
 Distribution of python is anaconda-2.1.0, this distribution is the latest version of using python2. 
 
 Those utilites included for [IBM Watson service](https://console.ng.bluemix.net/) laboratory are listed as below:
+- Google Cloud API
 - Watson SDK for nodejs and python
 - Node.js: json-query
 - Python: wordcloud
 
 ## Docker Hub Description
-### Docker Installation :
+### Docker Installation
 
 - [Windows](https://docs.docker.com/windows/step_one/)
 - [MacOS](https://docs.docker.com/mac/step_one/)
@@ -28,7 +29,7 @@ $ docker run --name nb -d -v /c/Users/yourName/workspace:/notebooks/workspace -p
 ```
 ``` 
     --name <container name>
-    -v <work-directory on host machine>:<mount point on docker image>
+    -v <work-directory on host machine>:/notebooks/workspace
 ```     
 
 2. Start/Stop/Remove container    
@@ -60,7 +61,7 @@ This images also managed by cloud.docker, and run on Softlayer.
 
 ### Open broswer and Go to:
 ``` 
-http://notebook.jessewei.tk:8889/tree
+http://notebook.jessewei.tk:8889
 ``` 
 
 ## Sample notebooks
