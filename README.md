@@ -12,7 +12,7 @@ Those utilites included for [IBM Watson service](https://console.ng.bluemix.net/
 - Node.js: json-query
 - Python: wordcloud
 
-## Description
+## Docker Hub Description
 ### Docker Installation :
 
 - [Windows](https://docs.docker.com/windows/step_one/)
@@ -53,6 +53,14 @@ http://192.168.99.100:8889/
 
 ```
 $ docker-machine ip
+``` 
+
+## Docker Cloud Description
+This images also managed by cloud.docker, and run on Softlayer.
+
+### Open broswer and Go to:
+``` 
+http://notebook.jessewei.tk:8889/tree
 ``` 
 
 ## Sample notebooks
