@@ -16,9 +16,7 @@ Those utilites included for [IBM Watson service](https://console.ng.bluemix.net/
 ## Docker Hub Description
 ### Docker Installation
 
-- [Windows](https://docs.docker.com/windows/step_one/)
-- [MacOS](https://docs.docker.com/mac/step_one/)
-- [Linux](https://docs.docker.com/linux/step_one/)
+- [Windows](https://docs.docker.com/windows/step_one/),  [MacOS](https://docs.docker.com/mac/step_one/), [Linux](https://docs.docker.com/linux/step_one/)
 
 ### Run
 
@@ -56,6 +54,8 @@ http://192.168.99.100:8889/
 $ docker-machine ip
 ``` 
 
+
+
 ## Docker Cloud Description
 This images also managed by cloud.docker, and run on Softlayer.
 
@@ -63,6 +63,8 @@ This images also managed by cloud.docker, and run on Softlayer.
 ``` 
 http://notebook.jessewei.tk:8889
 ``` 
+
+
 
 ## Sample notebooks
 ### Notebook location
@@ -73,5 +75,6 @@ http://192.168.99.100:8889/tree/nb_demo/watson
 Naming is followed the api, and add kernel used in the notebook.
 - **alchemy_language-py.ipynb**, alchemy_language API in python sample
 - **alchemy_vision-py.ipynb**, alchemy_vision API in python sample
+- **google_vision-py.ipynb**, Google vision API in python sample
 
 
