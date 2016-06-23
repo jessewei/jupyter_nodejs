@@ -72,7 +72,7 @@ http://notebook.jessewei.tk:8889
 http://192.168.99.100:8889/tree/nb_demo/watson
 ``` 
 ### Notebook list
-Naming is followed the api, and add kernel used in the notebook.
+The notebook naming start from api and kernel used.
 - **alchemy_language-py.ipynb**, alchemy_language API in python sample
 - **alchemy_vision-py.ipynb**, alchemy_vision API in python sample
 - **google_vision-py.ipynb**, Google vision API in python sample
